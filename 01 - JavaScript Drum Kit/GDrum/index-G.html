@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="keys">
+        <!-- build keys with different items from the tutorial just for fun-->
+        <div class="key" data-key="17">
+            <kbd>Ctrl</kbd>
+            <span class="sound">clap</span>
+        </div>
+        <div class="key" data-key="16">
+            <kbd>Shift</kbd>
+            <span class="sound">hihat</span>
+        </div>
+        <div class="key" data-key="20">
+            <kbd>Caps Lock</kbd>
+            <span class="sound">kick</span>
+        </div>
+        <div class="key" data-key="9">
+            <kbd>Tab</kbd>
+            <span class="sound">openhat</span>
+        </div>
+        <div class="key" data-key="81">
+            <kbd>Q</kbd>
+            <span class="sound">boom</span>
+        </div>
+        <div class="key" data-key="87">
+            <kbd>W</kbd>
+            <span class="sound">ride</span>
+        </div>
+        <div class="key" data-key="69">
+            <kbd>E</kbd>
+            <span class="sound">snare</span>
+        </div>
+        <div class="key" data-key="82">
+            <kbd>R</kbd>
+            <span class="sound">tom</span>
+        </div>
+        <div class="key" data-key="84">
+            <kbd>T</kbd>
+            <span class="sound">tink</span>
+        </div>
+
+        <!--add in sounds with .wav files matching data-key attribute-->
+        <audio data-key="17" src="../sounds/clap.wav"></audio>
+        <audio data-key="16" src="../sounds/hihat.wav"></audio>
+        <audio data-key="20" src="../sounds/kick.wav"></audio>
+        <audio data-key="9" src="../sounds/openhat.wav" ></audio>
+        <audio data-key="81" src= "../sounds/boom.wav"></audio>
+        <audio data-key="87" src= "../sounds/ride.wav"></audio>
+        <audio data-key="69" src="../sounds/snare.wav" ></audio>
+        <audio data-key="82" src= "../sounds/tom.wav"></audio>
+        <audio data-key="84" src="../sounds/tink.wav" ></audio>
+    </div>
+    <!--link to external js file-->
+    <script src="main.js"> </script>
+</body>
